@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Dec 02, 2021 at 05:12 PM
+-- Generation Time: Dec 13, 2021 at 04:08 PM
 -- Server version: 10.3.32-MariaDB
 -- PHP Version: 7.3.32
 
@@ -76,7 +76,6 @@ CREATE TABLE `ekspedisi` (
 
 INSERT INTO `ekspedisi` (`id_surat`, `nama`, `tujuan`, `sifat_dokumen`, `no_resi`, `divisi`, `pemeriksa`, `tgl_surat`, `tgl_diterima`, `file`, `no_surat`, `id_user`, `ttd_avp`, `ttd_pemeriksa`) VALUES
 (31, 'Nama', 'Tujuan Pengiriman', 'Biasa - Ekspedisi', '12345', 'Divisi', 'VP SDM & Umum', '2021-11-29', '2021-11-29', '4022-1464-Dipindai_20211022-1046.pdf', '12345', 1, 'Belum Disetujui', 'Belum Disetujui'),
-(32, 'Nama User', 'Tujuan Pengiriman', 'Biasa - Ekspedisi', '972351826', 'Divisi', 'VP SDM & Umum', '2021-11-30', '2021-11-30', '', '1821462', 20, 'Belum Disetujui', 'Belum Disetujui'),
 (33, ' Prilambang Dzikry Jatnika', 'Tujuan Pengiriman', 'Biasa - Ekspedisi', '12345', 'VP Riset & Pengembangan', 'VP Keuangan Korporasi', '2021-12-02', '2021-12-02', '3742-Screenshot (1).png', '12345', 1, 'Belum Disetujui', 'Belum Disetujui');
 
 -- --------------------------------------------------------
@@ -183,16 +182,14 @@ CREATE TABLE `maintenance` (
 --
 
 INSERT INTO `maintenance` (`id_surat`, `nama`, `status`, `keterangan`, `permintaan`, `divisi`, `pemeriksa`, `tgl_surat`, `tgl_diterima`, `file`, `id_user`, `ttd_avp`, `ttd_pemeriksa`) VALUES
-(48, 'rika fitriyati', 'Sedang di proses', 'Jam Dinding 1', 'Permintaan jam dinding u/ ruang kerja Komisaris Utama PT RNI (Persero)', 'sekor', '', '2021-11-13', '2021-10-22', '1464-Dipindai_20211022-1046.pdf', 1, '', ''),
+(48, 'rika fitriyati', 'Sedang di proses', 'Jam Dinding 1', 'Permintaan jam dinding u/ ruang kerja Komisaris Utama PT RNI (Persero)', 'sekor', '', '2021-11-13', '2021-10-22', '1464-Dipindai_20211022-1046.pdf', 1, '', 'Disetujui'),
 (49, 'Rika Fitriyati', 'Sedang di proses', 'BAYU KRISNAMURTHI -1, MARSUDI WAHYU KISWORO -1, ARIE SUJITO -1, HIMAWAN ARIEF SUGOTO -1, ABDUL ROCHIM -1, ABDI MUSTAKIM -1', 'Permintaan Papan Nama KOMISARIS PT RNI (Persero)', 'Sekor', '', '2021-09-14', '2021-10-22', '674-Scanned_20211022-1039.pdf', 1, '', ''),
 (53, 'Masayu Olivia Nurjanah', 'Sedang di proses', '', 'Permohonan  Pembuatan ID Card untuk Sdr. Saut dan Permohonan  Akses Parkir untuk Sdr. Saut', 'Pengembangan SDM', '', '2021-09-06', '2021-10-22', '222-Dipindai_20211022-1146.pdf', 1, '', ''),
 (54, 'Yudi Juni Ardi', 'Sedang di proses', 'Kartu Id dan Kartu Akses', 'Kartu akses untuk Pak Eko Purwanto TI', 'Unit Teknologi Informasi', '', '2021-09-02', '2021-10-22', '7034-Scanned_20211022-1328.pdf', 1, '', ''),
 (55, 'Sutarto', 'Sedang di proses', 'Kartu akses masuk RNI (id card) dan kartu akses parkir', 'Mohon dibuatkan kartu ini atas nama Christ Ekaprianda (VP Audit Operasional)', 'Satuan Pengawas Intern', '', '2021-09-06', '2021-10-22', '9313-Scanned_20211022-1148.pdf', 1, '', ''),
 (56, 'Shanya Audita K', 'Belum di proses', 'Meja dan Ruang Kerja  -   2', 'Permintaan Ruang Kerja, Meja Kerja dan Perlengkapannya untuk AVP Non Agro I dan AVP Perdagangan & Pengembangan Produk', 'Sales', '', '2021-09-06', '2021-10-22', '8891-Scanned_20211022-1353.pdf', 1, '', ''),
 (57, 'Dea Aprilia ', 'Belum di proses', '', 'Perbaikan Lampu di Ruang Manager Strategi & Sinergi Aset (C. Kristywulan W.) dan Ruang Manager Optimalisasi & Komersialisasi Aset (Ricko Wahyudi)', 'Pengembangan Aset', '', '2021-03-30', '2021-10-22', '1718-Dipindai_20211022-1634.pdf', 1, '', ''),
-(140, 'Rika Fitriyati', 'Belum Diproses', 'Jam Dinding 1', 'Permintaan jam dinding u/ ruang kerja Komisaris Utama PT RNI (Persero)', 'Sekor', 'Direktur Utama', '2021-11-29', '2021-11-29', '4734-1464-Dipindai_20211022-1046.pdf', 1, 'Belum Disetujui', 'Belum Disetujui'),
-(141, 'Rika Fitriyati', 'Belum Diproses', 'Satu set', 'Permintaan kabel 5 meter, colokan stop kontak 1 set untuk mesin kopi VP Akuntansi', 'Unit Teknologi Informasi', 'VP SDM & Umum', '2021-11-29', '2021-11-29', '', 20, 'Belum Disetujui', 'Belum Disetujui'),
-(142, ' Prilambang Dzikry Jatnika', 'Sedang di proses', 'Barang', 'Permintaan Layanan', 'Divisi', 'VP Non Agro', '2021-12-02', '2021-12-02', '', 1, 'Disetujui', 'Belum Disetujui');
+(140, 'Rika Fitriyati', 'Belum Diproses', 'Jam Dinding 1', 'Permintaan jam dinding u/ ruang kerja Komisaris Utama PT RNI (Persero)', 'Sekor', 'Direktur Utama', '2021-11-29', '2021-11-29', '4734-1464-Dipindai_20211022-1046.pdf', 1, 'Belum Disetujui', 'Disetujui');
 
 -- --------------------------------------------------------
 
@@ -251,6 +248,16 @@ CREATE TABLE `pemeriksa_ekspedisi` (
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
+-- Dumping data for table `pemeriksa_ekspedisi`
+--
+
+INSERT INTO `pemeriksa_ekspedisi` (`id_disposisi`, `nama_ttd`, `divisi_ttd`, `status_ttd`, `tgl_surat_ttd`, `id_surat`, `id_user`) VALUES
+(10, 'Prilambang', '', 'barcode_pemeriksa_ekspedisi', '2021-12-10 03:41:24', 41, 18),
+(9, 'pemeriksa', '', 'barcode_pemeriksa_ekspedisi', '2021-12-10 03:28:44', 40, 18),
+(7, 'pemeriksa', '', 'barcode_pemeriksa_ekspedisi', '2021-12-09 09:17:18', 40, 18),
+(8, 'pemeriksa', '', 'barcode_pemeriksa_ekspedisi', '2021-12-09 09:18:38', 40, 18);
+
+--
 -- Triggers `pemeriksa_ekspedisi`
 --
 DELIMITER $$
@@ -278,6 +285,27 @@ CREATE TABLE `pemeriksa_maintenance` (
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
+-- Dumping data for table `pemeriksa_maintenance`
+--
+
+INSERT INTO `pemeriksa_maintenance` (`id_disposisi`, `nama_ttd`, `divisi_ttd`, `status_ttd`, `tgl_surat_ttd`, `id_surat`, `id_user`) VALUES
+(34, 'pemeriksa', '', 'barcode_pemeriksa_maintenance', '2021-12-10 03:28:16', 145, 18),
+(33, 'Prilambang', '', 'barcode_pemeriksa_maintenance', '2021-12-10 03:27:24', 150, 18),
+(32, 'pemeriksa', '', 'barcode_pemeriksa_maintenance', '2021-12-10 03:27:18', 155, 18),
+(31, 'Muhajir', '', 'barcode_pemeriksa_maintenance', '2021-12-10 03:27:08', 151, 18),
+(30, 'pemeriksa', '', 'barcode_pemeriksa_maintenance', '2021-12-10 03:26:25', 146, 18),
+(29, 'pemeriksa', '', 'barcode_pemeriksa_maintenance', '2021-12-10 02:55:48', 48, 18),
+(28, 'pemeriksa', '', 'barcode_pemeriksa_maintenance', '2021-12-10 02:55:28', 151, 18),
+(27, 'pemeriksa', '', 'barcode_pemeriksa_maintenance', '2021-12-10 02:54:50', 151, 18),
+(26, 'pemeriksa', '', 'barcode_pemeriksa_maintenance', '2021-12-10 02:54:30', 140, 18),
+(25, 'pemeriksa', '', 'barcode_pemeriksa_maintenance', '2021-12-10 02:53:58', 149, 18),
+(24, 'pemeriksa', '', 'barcode_pemeriksa_maintenance', '2021-12-10 02:53:32', 153, 18),
+(23, 'pemeriksa', '', 'barcode_pemeriksa_maintenance', '2021-12-10 02:43:56', 154, 18),
+(22, 'pemeriksa', '', 'barcode_pemeriksa_maintenance', '2021-12-09 09:09:35', 154, 18),
+(35, 'Muhajir', '', 'barcode_pemeriksa_maintenance', '2021-12-10 03:39:04', 156, 18),
+(36, 'pemeriksa', '', 'barcode_pemeriksa_maintenance', '2021-12-10 03:44:59', 147, 18);
+
+--
 -- Triggers `pemeriksa_maintenance`
 --
 DELIMITER $$
@@ -303,6 +331,15 @@ CREATE TABLE `pemeriksa_transportasi` (
   `id_surat` int(10) NOT NULL,
   `id_user` tinyint(2) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `pemeriksa_transportasi`
+--
+
+INSERT INTO `pemeriksa_transportasi` (`id_disposisi`, `nama_ttd`, `divisi_ttd`, `status_ttd`, `tgl_surat_ttd`, `id_surat`, `id_user`) VALUES
+(11, 'Prilambang', '', 'barcode_pemeriksa_transportasi', '2021-12-10 03:40:25', 160, 18),
+(10, 'pemeriksa', '', 'barcode_pemeriksa_transportasi', '2021-12-10 03:29:02', 157, 18),
+(9, 'pemeriksa', '', 'barcode_pemeriksa_transportasi', '2021-12-10 03:29:02', 157, 18);
 
 --
 -- Triggers `pemeriksa_transportasi`
@@ -343,6 +380,19 @@ INSERT INTO `security` (`id_surat`, `nama_pembuat`, `kode_bon`, `nominal`, `vend
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `status`
+--
+
+CREATE TABLE `status` (
+  `id` int(10) NOT NULL,
+  `id_user` int(10) NOT NULL,
+  `id_surat` int(10) NOT NULL,
+  `status` varchar(250) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `stock`
 --
 
@@ -356,15 +406,13 @@ CREATE TABLE `stock` (
 --
 
 INSERT INTO `stock` (`id_surat`, `jenis_mobil`) VALUES
-(136, 'Mazda Biante - B 1607 SYI'),
 (130, 'Suzuki Ertiga - B 1858 SRQ'),
 (107, 'Suzuki Ertiga - B 1635 SRQ'),
-(91, 'Toyota Innova - B 2753 STM'),
+(144, 'Toyota Innova - B 2753 STM'),
 (137, 'Nissan Evalia - B 1148 SYG'),
 (133, 'Suzuki Ertiga - B 1863 SRQ'),
 (113, 'GRAB'),
-(143, 'Nissan Serena - B 3760 SUE'),
-(140, 'Grab 6');
+(148, 'Mazda Biante - B 1607 SYI');
 
 -- --------------------------------------------------------
 
@@ -507,6 +555,13 @@ CREATE TABLE `tidak_setuju_avp_ekspedisi` (
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
+-- Dumping data for table `tidak_setuju_avp_ekspedisi`
+--
+
+INSERT INTO `tidak_setuju_avp_ekspedisi` (`id_disposisi`, `nama_ttd`, `divisi_ttd`, `status_ttd`, `tgl_surat_ttd`, `id_surat`, `id_user`) VALUES
+(4, 'Muhajir', '', 'Tidak di setujui', '2021-12-10 03:43:41', 42, 1);
+
+--
 -- Triggers `tidak_setuju_avp_ekspedisi`
 --
 DELIMITER $$
@@ -534,6 +589,14 @@ CREATE TABLE `tidak_setuju_avp_maintenance` (
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
+-- Dumping data for table `tidak_setuju_avp_maintenance`
+--
+
+INSERT INTO `tidak_setuju_avp_maintenance` (`id_disposisi`, `nama_ttd`, `divisi_ttd`, `status_ttd`, `tgl_surat_ttd`, `id_surat`, `id_user`) VALUES
+(10, 'Muhajir', '', 'Tidak Disetujui', '2021-12-10 03:42:28', 156, 1),
+(9, 'Muhajir', '', 'Tidak Disetujui', '2021-12-09 09:43:17', 154, 1);
+
+--
 -- Triggers `tidak_setuju_avp_maintenance`
 --
 DELIMITER $$
@@ -558,6 +621,13 @@ CREATE TABLE `tidak_setuju_avp_transportasi` (
   `id_surat` int(10) NOT NULL,
   `id_user` tinyint(2) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `tidak_setuju_avp_transportasi`
+--
+
+INSERT INTO `tidak_setuju_avp_transportasi` (`id_disposisi`, `nama_ttd`, `status_ttd`, `tgl_surat_ttd`, `id_surat`, `id_user`) VALUES
+(5, 'Muhajir', 'Tidak Disetujui', '2021-12-10 03:42:49', 161, 1);
 
 --
 -- Triggers `tidak_setuju_avp_transportasi`
@@ -587,6 +657,14 @@ CREATE TABLE `tidak_setuju_pemeriksa_ekspedisi` (
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
+-- Dumping data for table `tidak_setuju_pemeriksa_ekspedisi`
+--
+
+INSERT INTO `tidak_setuju_pemeriksa_ekspedisi` (`id_disposisi`, `nama_ttd`, `divisi_ttd`, `status_ttd`, `tgl_surat_ttd`, `id_surat`, `id_user`) VALUES
+(3, 'pemeriksa', '', 'Tidak Disetujui', '2021-12-09 09:18:29', 40, 18),
+(4, 'Prilambang', '', 'Tidak Disetujui', '2021-12-10 03:41:51', 42, 18);
+
+--
 -- Triggers `tidak_setuju_pemeriksa_ekspedisi`
 --
 DELIMITER $$
@@ -614,6 +692,13 @@ CREATE TABLE `tidak_setuju_pemeriksa_maintenance` (
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
+-- Dumping data for table `tidak_setuju_pemeriksa_maintenance`
+--
+
+INSERT INTO `tidak_setuju_pemeriksa_maintenance` (`id_disposisi`, `nama_ttd`, `divisi_ttd`, `status_ttd`, `tgl_surat_ttd`, `id_surat`, `id_user`) VALUES
+(5, 'Prilambang', '', 'Tidak Disetujui', '2021-12-10 03:39:34', 157, 18);
+
+--
 -- Triggers `tidak_setuju_pemeriksa_maintenance`
 --
 DELIMITER $$
@@ -639,6 +724,13 @@ CREATE TABLE `tidak_setuju_pemeriksa_transportasi` (
   `id_surat` int(10) NOT NULL,
   `id_user` tinyint(2) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `tidak_setuju_pemeriksa_transportasi`
+--
+
+INSERT INTO `tidak_setuju_pemeriksa_transportasi` (`id_disposisi`, `nama_ttd`, `divisi_ttd`, `status_ttd`, `tgl_surat_ttd`, `id_surat`, `id_user`) VALUES
+(4, 'Prilambang', '', 'Tidak Disetujui', '2021-12-10 03:40:56', 161, 18);
 
 --
 -- Triggers `tidak_setuju_pemeriksa_transportasi`
@@ -720,6 +812,15 @@ CREATE TABLE `ttd_vp` (
 --
 
 INSERT INTO `ttd_vp` (`id_disposisi`, `nama_ttd`, `divisi_ttd`, `status_ttd`, `tgl_surat_ttd`, `id_surat`, `id_user`) VALUES
+(58, 'Muhajir', '', 'barcode_avp_maintenance', '2021-12-10 03:42:15', 157, 1),
+(57, 'Muhajir', '', 'barcode_avp_maintenance', '2021-12-10 02:44:31', 153, 1),
+(56, 'Muhajir', '', 'barcode_avp_maintenance', '2021-12-09 06:39:25', 152, 1),
+(55, 'Muhajir', '', 'barcode_avp_maintenance', '2021-12-09 03:12:17', 152, 1),
+(54, 'Muhajir', '', 'barcode_avp_maintenance', '2021-12-09 03:12:06', 152, 1),
+(53, 'Muhajir', '', 'barcode_avp_maintenance', '2021-12-09 03:11:28', 152, 1),
+(52, 'Muhajir', '', 'barcode_avp_maintenance', '2021-12-09 02:10:16', 146, 1),
+(51, 'Muhajir', '', 'barcode_avp_maintenance', '2021-12-09 01:43:31', 145, 1),
+(50, 'Muhajir', '', 'barcode_avp_maintenance', '2021-12-08 09:53:48', 141, 1),
 (49, 'Muhajir', '', 'barcode_avp_maintenance', '2021-12-02 08:11:47', 142, 1);
 
 --
@@ -750,6 +851,17 @@ CREATE TABLE `ttd_vp_ekspedisi` (
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
+-- Dumping data for table `ttd_vp_ekspedisi`
+--
+
+INSERT INTO `ttd_vp_ekspedisi` (`id_disposisi`, `nama_ttd`, `divisi_ttd`, `status_ttd`, `tgl_surat_ttd`, `id_surat`, `id_user`) VALUES
+(14, 'Muhajir', '', 'barcode_avp_ekspedisi', '2021-12-10 03:43:49', 41, 1),
+(13, 'Muhajir', '', 'barcode_avp_ekspedisi', '2021-12-09 06:58:58', 39, 1),
+(12, 'Muhajir', '', 'barcode_avp_ekspedisi', '2021-12-09 06:15:29', 38, 1),
+(11, 'Muhajir', '', 'barcode_avp_ekspedisi', '2021-12-09 06:11:43', 37, 1),
+(10, 'Muhajir', '', 'barcode_avp_ekspedisi', '2021-12-09 06:04:56', 35, 1);
+
+--
 -- Triggers `ttd_vp_ekspedisi`
 --
 DELIMITER $$
@@ -775,6 +887,16 @@ CREATE TABLE `ttd_vp_transportasi` (
   `id_user` tinyint(2) NOT NULL,
   `id_surat` int(10) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `ttd_vp_transportasi`
+--
+
+INSERT INTO `ttd_vp_transportasi` (`id_disposisi`, `nama_ttd`, `divisi_ttd`, `status_ttd`, `tgl_surat_ttd`, `id_user`, `id_surat`) VALUES
+(18, 'Muhajir', '', 'barcode_avp_transportasi', '2021-12-10 03:42:59', 1, 160),
+(17, 'Muhajir', '', 'barcode_avp_transportasi', '2021-12-10 03:42:56', 1, 160),
+(16, 'Muhajir', '', 'barcode_avp_transportasi', '2021-12-09 06:58:42', 1, 159),
+(15, 'Muhajir', '', 'barcode_avp_transportasi', '2021-12-09 06:08:57', 1, 158);
 
 --
 -- Triggers `ttd_vp_transportasi`
@@ -856,6 +978,12 @@ ALTER TABLE `pemeriksa_transportasi`
 --
 ALTER TABLE `security`
   ADD PRIMARY KEY (`id_surat`);
+
+--
+-- Indexes for table `status`
+--
+ALTER TABLE `status`
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `stock`
@@ -950,7 +1078,7 @@ ALTER TABLE `cleaning_service`
 -- AUTO_INCREMENT for table `ekspedisi`
 --
 ALTER TABLE `ekspedisi`
-  MODIFY `id_surat` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=35;
+  MODIFY `id_surat` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=43;
 
 --
 -- AUTO_INCREMENT for table `invoice_ekspedisi`
@@ -974,7 +1102,7 @@ ALTER TABLE `invoice_transportasi`
 -- AUTO_INCREMENT for table `maintenance`
 --
 ALTER TABLE `maintenance`
-  MODIFY `id_surat` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=143;
+  MODIFY `id_surat` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=158;
 
 --
 -- AUTO_INCREMENT for table `mobil`
@@ -986,19 +1114,19 @@ ALTER TABLE `mobil`
 -- AUTO_INCREMENT for table `pemeriksa_ekspedisi`
 --
 ALTER TABLE `pemeriksa_ekspedisi`
-  MODIFY `id_disposisi` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id_disposisi` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT for table `pemeriksa_maintenance`
 --
 ALTER TABLE `pemeriksa_maintenance`
-  MODIFY `id_disposisi` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
+  MODIFY `id_disposisi` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=37;
 
 --
 -- AUTO_INCREMENT for table `pemeriksa_transportasi`
 --
 ALTER TABLE `pemeriksa_transportasi`
-  MODIFY `id_disposisi` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id_disposisi` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- AUTO_INCREMENT for table `security`
@@ -1007,10 +1135,16 @@ ALTER TABLE `security`
   MODIFY `id_surat` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=34;
 
 --
+-- AUTO_INCREMENT for table `status`
+--
+ALTER TABLE `status`
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT;
+
+--
 -- AUTO_INCREMENT for table `stock`
 --
 ALTER TABLE `stock`
-  MODIFY `id_surat` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=144;
+  MODIFY `id_surat` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=149;
 
 --
 -- AUTO_INCREMENT for table `tbl_proses`
@@ -1028,61 +1162,61 @@ ALTER TABLE `tbl_user`
 -- AUTO_INCREMENT for table `tidak_setuju_avp_ekspedisi`
 --
 ALTER TABLE `tidak_setuju_avp_ekspedisi`
-  MODIFY `id_disposisi` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id_disposisi` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `tidak_setuju_avp_maintenance`
 --
 ALTER TABLE `tidak_setuju_avp_maintenance`
-  MODIFY `id_disposisi` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id_disposisi` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT for table `tidak_setuju_avp_transportasi`
 --
 ALTER TABLE `tidak_setuju_avp_transportasi`
-  MODIFY `id_disposisi` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id_disposisi` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `tidak_setuju_pemeriksa_ekspedisi`
 --
 ALTER TABLE `tidak_setuju_pemeriksa_ekspedisi`
-  MODIFY `id_disposisi` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id_disposisi` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `tidak_setuju_pemeriksa_maintenance`
 --
 ALTER TABLE `tidak_setuju_pemeriksa_maintenance`
-  MODIFY `id_disposisi` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id_disposisi` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `tidak_setuju_pemeriksa_transportasi`
 --
 ALTER TABLE `tidak_setuju_pemeriksa_transportasi`
-  MODIFY `id_disposisi` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id_disposisi` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `transportasi`
 --
 ALTER TABLE `transportasi`
-  MODIFY `id_surat` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=157;
+  MODIFY `id_surat` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=162;
 
 --
 -- AUTO_INCREMENT for table `ttd_vp`
 --
 ALTER TABLE `ttd_vp`
-  MODIFY `id_disposisi` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=50;
+  MODIFY `id_disposisi` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=59;
 
 --
 -- AUTO_INCREMENT for table `ttd_vp_ekspedisi`
 --
 ALTER TABLE `ttd_vp_ekspedisi`
-  MODIFY `id_disposisi` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id_disposisi` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 --
 -- AUTO_INCREMENT for table `ttd_vp_transportasi`
 --
 ALTER TABLE `ttd_vp_transportasi`
-  MODIFY `id_disposisi` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+  MODIFY `id_disposisi` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
