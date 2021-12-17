@@ -34,7 +34,7 @@
                                     <a class="small" href="forgot-password.html">Forgot Password?</a>
                                 </div>
                                 <div class="text-center">
-                                    <a class="small" href="<?= base_url('auth/registration') ?>">Create an Account!</a>
+                                    <a class="small" href="<?= base_url('/auth/registration') ?>">Create an Account!</a>
                                 </div>
                                 <div class="text-center mt-5">
                                     <p class="small">2021 ORARI Lokal Jakarta Selatan</p>
